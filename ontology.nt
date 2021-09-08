@@ -17,6 +17,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+<http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement
 <http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -77,6 +78,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> .
 <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+<http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#FloorElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement
 <http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -84,6 +86,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+<http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#FoundationElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#hasFrameElement
 <http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -91,11 +94,24 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+<http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#hasRequirement
 <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl#isRequirementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+<http://www.co-ode.org/ontologies/ont.owl#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#hasUse
 <http://www.co-ode.org/ontologies/ont.owl#hasUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -113,6 +129,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf
 <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
 <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isCeilingElementOf
@@ -130,15 +147,15 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://www.co-ode.org/ontologies/ont.owl#isEffectOf
 <http://www.co-ode.org/ontologies/ont.owl#isEffectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.co-ode.org/ontologies/ont.owl#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isEnvironmentalAspectOf
 <http://www.co-ode.org/ontologies/ont.owl#isEnvironmentalAspectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -153,35 +170,50 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://www.co-ode.org/ontologies/ont.owl#isFeatureOf
 <http://www.co-ode.org/ontologies/ont.owl#isFeatureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.co-ode.org/ontologies/ont.owl#isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf
 <http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> .
+<http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#FloorElement> .
 <http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf
 <http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#FoundationElement> .
 <http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf
 <http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> .
 <http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
 <http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isRequirementOf
 <http://www.co-ode.org/ontologies/ont.owl#isRequirementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.co-ode.org/ontologies/ont.owl#isRequirementOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.co-ode.org/ontologies/ont.owl#isRequirementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#isUseOf
@@ -207,15 +239,15 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.co-ode.org/ontologies/ont.owl#hasArea
 <http://www.co-ode.org/ontologies/ont.owl#hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.co-ode.org/ontologies/ont.owl#hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://www.co-ode.org/ontologies/ont.owl#hasArea> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.co-ode.org/ontologies/ont.owl#hasArea> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue
 <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -298,26 +330,26 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://www.co-ode.org/ontologies/ont.owl#AccessRoad
 <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#AccessRoad> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid19 <http://www.w3.org/2002/07/owl#oneOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#DirectAccess> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#IndirectAccess> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#AccessRoad> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid27 <http://www.w3.org/2002/07/owl#oneOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#DirectAccess> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#IndirectAccess> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature
@@ -333,10 +365,10 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse
 <http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
-<http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
+<http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#ArtificialLightFeature
 <http://www.co-ode.org/ontologies/ont.owl#ArtificialLightFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -350,6 +382,7 @@ _:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # 
 # http://www.co-ode.org/ontologies/ont.owl#BeamElement
 <http://www.co-ode.org/ontologies/ont.owl#BeamElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#BeamElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#BenchComponent
 <http://www.co-ode.org/ontologies/ont.owl#BenchComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -357,26 +390,28 @@ _:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # 
 # http://www.co-ode.org/ontologies/ont.owl#BraceElement
 <http://www.co-ode.org/ontologies/ont.owl#BraceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#BraceElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment
 <http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
-<http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
 <http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#StructuralCeilingElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#CeilingElement
 <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> .
+<http://www.co-ode.org/ontologies/ont.owl#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#CeramicFloor
 <http://www.co-ode.org/ontologies/ont.owl#CeramicFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -388,24 +423,25 @@ _:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # 
 # http://www.co-ode.org/ontologies/ont.owl#ColumnElement
 <http://www.co-ode.org/ontologies/ont.owl#ColumnElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#ColumnElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#CommunityUse
 <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
-<http://www.co-ode.org/ontologies/ont.owl#CommunityUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#CommunityUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
 <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> <http://www.w3.org/2000/01/rdf-schema#comment> "A high school gym could provide service to the community during certain events."@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent
 <http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor
 <http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -443,143 +479,177 @@ _:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 <http://www.co-ode.org/ontologies/ont.owl#EmergencyCommunityUse> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> .
 <http://www.co-ode.org/ontologies/ont.owl#EmergencyCommunityUse> <http://www.w3.org/2000/01/rdf-schema#comment> "A high school gymnasium can have use for the community during emergency situations. For instance providing shelter in the event of disaster."@en .
 # 
+# http://www.co-ode.org/ontologies/ont.owl#FloorElement
+<http://www.co-ode.org/ontologies/ont.owl#FloorElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#FloorElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> .
+# 
 # http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement
 <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#FloorElement> .
 <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#FoundationElement
+<http://www.co-ode.org/ontologies/ont.owl#FoundationElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#FoundationElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#FrameElement
+<http://www.co-ode.org/ontologies/ont.owl#FrameElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#FrameElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#Gymnasium
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid34 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid32 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PassageComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StepComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
-_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
-_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
-_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ParkingSpace> .
-<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid38 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid42 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid40 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PassageComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
-_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StepComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
-_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
-_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ParkingSpace> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement> .
-_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWallElement> .
-_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWallElement> .
-_:genid54 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#WallPadding> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
 _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid55 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid55 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid56 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid56 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl#LockerComponent> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> .
 <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
-_:genid57 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid57 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasUse> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement> .
+_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#FloorElement> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#FoundationElement> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> .
+_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWallElement> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWallElement> .
+_:genid65 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#WallPadding> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid66 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl#LockerComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> .
+_:genid68 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -587,46 +657,50 @@ _:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#DesignedGymnasium> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
-_:genid61 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
+_:genid72 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#DesignedGymnasium> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
-_:genid62 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> .
+_:genid73 <http://www.w3.org/2002/07/owl#hasValue> <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Events that are going to be hosted in the gymnasium" .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#HandRailComponent
@@ -657,38 +731,38 @@ _:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # 
 # http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent
 <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid69 .
-_:genid69 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid71 <http://www.w3.org/2002/07/owl#oneOf> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid83 <http://www.w3.org/2002/07/owl#oneOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#MainHallComponent
 <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid76 <http://www.w3.org/2002/07/owl#complementOf> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> .
-_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#RubberFloor> .
+<http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid88 <http://www.w3.org/2002/07/owl#complementOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#RubberFloor> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#MarbleFloor
 <http://www.co-ode.org/ontologies/ont.owl#MarbleFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -702,10 +776,10 @@ _:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse
 <http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> .
-<http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
 <http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> <http://www.w3.org/2000/01/rdf-schema#comment> "A high school gymnasium can have use for the community that are not related to emergency. For instance voting venue during elections."@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#OfficeComponent
@@ -724,26 +798,26 @@ _:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse
 <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
-<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid92 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid95 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment
 <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -764,10 +838,10 @@ _:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent
 <http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid96 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor
 <http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -788,103 +862,103 @@ _:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/
 # http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse
 <http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Venue for school ceremonies such as commencement ceremonies"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse
 <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> <http://www.w3.org/2000/01/rdf-schema#comment> "High school dancing event such as prom, homecoming and others."@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse
 <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> <http://www.w3.org/2000/01/rdf-schema#comment> "e.g. student meetings, teacher-parent meetings"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid92 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> <http://www.w3.org/2000/01/rdf-schema#comment> "e.g. Volleyball, basketball"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid95 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid96 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid107 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
-_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid109 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid113 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> .
+_:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Venue for Sporting events"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent
@@ -894,33 +968,33 @@ _:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org
 # http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent
 <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
-<http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
-_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFeature> .
+_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#SeatingComponent
 <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid104 .
-_:genid104 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid106 .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid106 <http://www.w3.org/2002/07/owl#oneOf> _:genid109 .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#FixedSeating> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PortableSeating> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid118 <http://www.w3.org/2002/07/owl#oneOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#FixedSeating> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PortableSeating> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#ShowerComponent
@@ -945,6 +1019,7 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement
 <http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#FloorElement> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent
 <http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -969,25 +1044,26 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://www.co-ode.org/ontologies/ont.owl#WallAttachment
 <http://www.co-ode.org/ontologies/ont.owl#WallAttachment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#WallAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
-<http://www.co-ode.org/ontologies/ont.owl#WallAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#WallAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#WallAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid123 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#WallAttachment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid124 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#WallElement
 <http://www.co-ode.org/ontologies/ont.owl#WallElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl#WallElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid113 .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid113 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
-<http://www.co-ode.org/ontologies/ont.owl#WallElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
-_:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#WallElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement> .
+<http://www.co-ode.org/ontologies/ont.owl#WallElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid125 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
+<http://www.co-ode.org/ontologies/ont.owl#WallElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEffect> .
+_:genid126 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#WoodFloor
 <http://www.co-ode.org/ontologies/ont.owl#WoodFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1010,31 +1086,31 @@ _:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.co-ode.org
 <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> <http://www.co-ode.org/ontologies/ont.owl#hasLength> "26.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> <http://www.co-ode.org/ontologies/ont.owl#hasWidth> "15.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> <http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc> "6.01"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid115 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid115 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFoulLine> .
-_:genid115 <http://www.w3.org/2002/07/owl#annotatedTarget> "0.4 from the foul line to the front of the backboard and 5.7 from the baseline" .
-_:genid115 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid116 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid116 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasKeyWidth> .
-_:genid116 <http://www.w3.org/2002/07/owl#annotatedTarget> "3.6"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid116 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid117 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid117 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLength> .
-_:genid117 <http://www.w3.org/2002/07/owl#annotatedTarget> "26.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid117 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid118 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid118 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWidth> .
-_:genid118 <http://www.w3.org/2002/07/owl#annotatedTarget> "15.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid118 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid119 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
-_:genid119 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc> .
-_:genid119 <http://www.w3.org/2002/07/owl#annotatedTarget> "6.01"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid119 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid127 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid127 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasFoulLine> .
+_:genid127 <http://www.w3.org/2002/07/owl#annotatedTarget> "0.4 from the foul line to the front of the backboard and 5.7 from the baseline" .
+_:genid127 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid128 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid128 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasKeyWidth> .
+_:genid128 <http://www.w3.org/2002/07/owl#annotatedTarget> "3.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid128 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid129 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid129 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLength> .
+_:genid129 <http://www.w3.org/2002/07/owl#annotatedTarget> "26.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid129 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid130 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid130 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWidth> .
+_:genid130 <http://www.w3.org/2002/07/owl#annotatedTarget> "15.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid130 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid131 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> .
+_:genid131 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc> .
+_:genid131 <http://www.w3.org/2002/07/owl#annotatedTarget> "6.01"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid131 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#BasketballMatch
 <http://www.co-ode.org/ontologies/ont.owl#BasketballMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1060,11 +1136,11 @@ _:genid119 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> <http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption1> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.co-ode.org/ontologies/ont.owl#hasArea> "700.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> "7.32"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid120 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> .
-_:genid120 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> .
-_:genid120 <http://www.w3.org/2002/07/owl#annotatedTarget> "7.32"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid120 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid132 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> .
+_:genid132 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> .
+_:genid132 <http://www.w3.org/2002/07/owl#annotatedTarget> "7.32"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid132 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1076,11 +1152,11 @@ _:genid120 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.co-ode.org/ontologies/ont.owl#hasComponent> <http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption2> .
 <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> "7.32"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid121 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> .
-_:genid121 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> .
-_:genid121 <http://www.w3.org/2002/07/owl#annotatedTarget> "7.32"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid121 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid133 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> .
+_:genid133 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> .
+_:genid133 <http://www.w3.org/2002/07/owl#annotatedTarget> "7.32"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid133 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess
 <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1104,11 +1180,11 @@ _:genid121 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> "30x30" .
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> <http://www.co-ode.org/ontologies/ont.owl#hasLockerType> "30 Double tier" .
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfLocker> "60"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid122 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> .
-_:genid122 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> .
-_:genid122 <http://www.w3.org/2002/07/owl#annotatedTarget> "30x30" .
-_:genid122 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Centimeter"@en .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid134 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> .
+_:genid134 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> .
+_:genid134 <http://www.w3.org/2002/07/owl#annotatedTarget> "30x30" .
+_:genid134 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Centimeter"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#LockerOption2
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1116,11 +1192,11 @@ _:genid122 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Centimeter
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> "(3)30x30" .
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> <http://www.co-ode.org/ontologies/ont.owl#hasLockerType> "(60) 5‐tier/5‐tier/full" .
 <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfLocker> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid123 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> .
-_:genid123 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> .
-_:genid123 <http://www.w3.org/2002/07/owl#annotatedTarget> "(3)30x30" .
-_:genid123 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Centimeter"@en .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid135 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> .
+_:genid135 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> .
+_:genid135 <http://www.w3.org/2002/07/owl#annotatedTarget> "(3)30x30" .
+_:genid135 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Centimeter"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption1
 <http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1143,20 +1219,20 @@ _:genid123 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Centimeter
 # http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance
 <http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance> <http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue> "3.1"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid124 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance> .
-_:genid124 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue> .
-_:genid124 <http://www.w3.org/2002/07/owl#annotatedTarget> "3.1"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid124 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid136 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance> .
+_:genid136 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue> .
+_:genid136 <http://www.w3.org/2002/07/owl#annotatedTarget> "3.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid136 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance
 <http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance> <http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue> "1.8"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid125 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance> .
-_:genid125 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue> .
-_:genid125 <http://www.w3.org/2002/07/owl#annotatedTarget> "1.8"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid125 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid137 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance> .
+_:genid137 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue> .
+_:genid137 <http://www.w3.org/2002/07/owl#annotatedTarget> "1.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid137 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#PortableSeating
 <http://www.co-ode.org/ontologies/ont.owl#PortableSeating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1168,21 +1244,21 @@ _:genid125 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en
 <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> <http://www.co-ode.org/ontologies/ont.owl#hasArea> "40.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid126 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> .
-_:genid126 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasArea> .
-_:genid126 <http://www.w3.org/2002/07/owl#annotatedTarget> "40.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid126 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Meters"@en .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid138 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> .
+_:genid138 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasArea> .
+_:genid138 <http://www.w3.org/2002/07/owl#annotatedTarget> "40.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid138 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2
 <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> <http://www.co-ode.org/ontologies/ont.owl#hasArea> "80.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid127 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> .
-_:genid127 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasArea> .
-_:genid127 <http://www.w3.org/2002/07/owl#annotatedTarget> "80.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid127 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Meters" .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid139 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> .
+_:genid139 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasArea> .
+_:genid139 <http://www.w3.org/2002/07/owl#annotatedTarget> "80.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid139 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Meters" .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating
 <http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1194,11 +1270,11 @@ _:genid127 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Met
 <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
 <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> <http://www.co-ode.org/ontologies/ont.owl#hasArea> "230.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid128 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> .
-_:genid128 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasArea> .
-_:genid128 <http://www.w3.org/2002/07/owl#annotatedTarget> "230.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid128 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Meters"@en .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid140 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> .
+_:genid140 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasArea> .
+_:genid140 <http://www.w3.org/2002/07/owl#annotatedTarget> "230.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid140 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt
 <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1207,26 +1283,26 @@ _:genid128 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in square Met
 <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen> "2.43"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen> "2.24"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> <http://www.co-ode.org/ontologies/ont.owl#hasWidth> "9.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid129 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
-_:genid129 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLength> .
-_:genid129 <http://www.w3.org/2002/07/owl#annotatedTarget> "18.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid129 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid130 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
-_:genid130 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen> .
-_:genid130 <http://www.w3.org/2002/07/owl#annotatedTarget> "2.43"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid130 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid131 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
-_:genid131 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen> .
-_:genid131 <http://www.w3.org/2002/07/owl#annotatedTarget> "2.24"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid131 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid132 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
-_:genid132 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWidth> .
-_:genid132 <http://www.w3.org/2002/07/owl#annotatedTarget> "9.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-_:genid132 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid141 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
+_:genid141 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasLength> .
+_:genid141 <http://www.w3.org/2002/07/owl#annotatedTarget> "18.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid141 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid142 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
+_:genid142 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen> .
+_:genid142 <http://www.w3.org/2002/07/owl#annotatedTarget> "2.43"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid142 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid143 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
+_:genid143 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen> .
+_:genid143 <http://www.w3.org/2002/07/owl#annotatedTarget> "2.24"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid143 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid144 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> .
+_:genid144 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.co-ode.org/ontologies/ont.owl#hasWidth> .
+_:genid144 <http://www.w3.org/2002/07/owl#annotatedTarget> "9.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid144 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl#VolleyballMatch
 <http://www.co-ode.org/ontologies/ont.owl#VolleyballMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1261,181 +1337,220 @@ _:genid132 <http://www.w3.org/2000/01/rdf-schema#comment> "Unit is in Meters"@en
 # #################################################################
 # 
 # 
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid133 <http://www.w3.org/2002/07/owl#members> _:genid136 .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ParkingSpace> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-# 
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid137 <http://www.w3.org/2002/07/owl#members> _:genid142 .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid141 .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-# 
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid143 <http://www.w3.org/2002/07/owl#members> _:genid149 .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid145 <http://www.w3.org/2002/07/owl#members> _:genid148 .
 _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
 _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool> .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
 _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ParkingSpace> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid150 <http://www.w3.org/2002/07/owl#members> _:genid153 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid149 <http://www.w3.org/2002/07/owl#members> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
 _:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> .
 _:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
 _:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> .
 _:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
 _:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#LightFeature> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid154 <http://www.w3.org/2002/07/owl#members> _:genid157 .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BeamElement> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BraceElement> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ColumnElement> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-# 
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid158 <http://www.w3.org/2002/07/owl#members> _:genid163 .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BenchComponent> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#LockerComponent> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid161 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid155 <http://www.w3.org/2002/07/owl#members> _:genid161 .
 _:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PreAndPostGameMeetingsAreaComponent> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> .
 _:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid160 .
 _:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ShowerComponent> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> .
 _:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
 _:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ToiletComponent> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid164 <http://www.w3.org/2002/07/owl#members> _:genid173 .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CeramicFloor> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid172 .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor> .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#HardPlasticFloor> .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid170 .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MarbleFloor> .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid169 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid162 <http://www.w3.org/2002/07/owl#members> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SportEquipment> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid166 <http://www.w3.org/2002/07/owl#members> _:genid169 .
 _:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PorcelainMosaicFloor> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BeamElement> .
 _:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid168 .
 _:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BraceElement> .
 _:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid167 .
 _:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#RubberFloor> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid166 .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#VinylFloor> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid165 .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#WoodFloor> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ColumnElement> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid174 <http://www.w3.org/2002/07/owl#members> _:genid178 .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid175 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid170 <http://www.w3.org/2002/07/owl#members> _:genid175 .
 _:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TicketingComponent> .
-_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#BenchComponent> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#LockerComponent> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PreAndPostGameMeetingsAreaComponent> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ShowerComponent> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ToiletComponent> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid179 <http://www.w3.org/2002/07/owl#members> _:genid183 .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid182 .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid181 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid176 <http://www.w3.org/2002/07/owl#members> _:genid181 .
 _:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
 _:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid180 .
 _:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#FloorElement> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#FoundationElement> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#FrameElement> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid184 <http://www.w3.org/2002/07/owl#members> _:genid191 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid182 <http://www.w3.org/2002/07/owl#members> _:genid191 .
 _:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CeramicFloor> .
 _:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid190 .
 _:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor> .
 _:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid189 .
 _:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#HardPlasticFloor> .
 _:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid188 .
 _:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MarbleFloor> .
 _:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid187 .
 _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PorcelainMosaicFloor> .
 _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid186 .
 _:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor> .
 _:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid185 .
 _:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#RubberFloor> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid184 .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#VinylFloor> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid183 .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#WoodFloor> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid192 <http://www.w3.org/2002/07/owl#members> _:genid196 .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid195 .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid193 .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TicketingComponent> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid197 <http://www.w3.org/2002/07/owl#members> _:genid201 .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid200 .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid198 .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid202 <http://www.w3.org/2002/07/owl#members> _:genid208 .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid206 .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement> .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid205 .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid204 .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid209 <http://www.w3.org/2002/07/owl#members> _:genid216 .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid215 .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid214 .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid213 .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid212 .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid211 .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid210 .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

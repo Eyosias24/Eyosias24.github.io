@@ -37,6 +37,7 @@ Student ID: 942020</rdfs:comment>
         <inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
     </ObjectProperty>
     
 
@@ -130,6 +131,7 @@ Student ID: 942020</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement"/>
         <inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FloorElement"/>
     </ObjectProperty>
     
 
@@ -142,6 +144,7 @@ Student ID: 942020</rdfs:comment>
         <inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FoundationElement"/>
     </ObjectProperty>
     
 
@@ -154,6 +157,7 @@ Student ID: 942020</rdfs:comment>
         <inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
     </ObjectProperty>
     
 
@@ -164,6 +168,15 @@ Student ID: 942020</rdfs:comment>
     <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasRequirement">
         <inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isRequirementOf"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
     </ObjectProperty>
     
 
@@ -196,6 +209,7 @@ Student ID: 942020</rdfs:comment>
 
     <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
     </ObjectProperty>
     
@@ -282,6 +296,7 @@ Student ID: 942020</rdfs:comment>
 
     <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf">
         <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FloorElement"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
     </ObjectProperty>
     
@@ -293,6 +308,7 @@ Student ID: 942020</rdfs:comment>
     <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf">
         <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FoundationElement"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
     </ObjectProperty>
     
@@ -304,6 +320,7 @@ Student ID: 942020</rdfs:comment>
     <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf">
         <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
     </ObjectProperty>
     
@@ -313,6 +330,15 @@ Student ID: 942020</rdfs:comment>
 
 
     <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isRequirementOf">
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse"/>
     </ObjectProperty>
     
@@ -620,7 +646,9 @@ Student ID: 942020</rdfs:comment>
     <!-- http://www.co-ode.org/ontologies/ont.owl#BeamElement -->
 
 
-    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BeamElement"/>
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BeamElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
+    </Class>
     
 
 
@@ -636,7 +664,9 @@ Student ID: 942020</rdfs:comment>
     <!-- http://www.co-ode.org/ontologies/ont.owl#BraceElement -->
 
 
-    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BraceElement"/>
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BraceElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
+    </Class>
     
 
 
@@ -660,6 +690,7 @@ Student ID: 942020</rdfs:comment>
 
 
     <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CeilingElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEffect"/>
@@ -697,7 +728,9 @@ Student ID: 942020</rdfs:comment>
     <!-- http://www.co-ode.org/ontologies/ont.owl#ColumnElement -->
 
 
-    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ColumnElement"/>
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ColumnElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
+    </Class>
     
 
 
@@ -809,11 +842,39 @@ Student ID: 942020</rdfs:comment>
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FloorElement -->
+
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloorElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement"/>
+    </Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement -->
 
 
     <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FloorElement"/>
         <disjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FoundationElement -->
+
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FoundationElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FrameElement -->
+
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FrameElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement"/>
     </Class>
     
 
@@ -946,6 +1007,24 @@ Student ID: 942020</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
+                <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasFloorElement"/>
+                <allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FloorElement"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement"/>
+                <allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FoundationElement"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasFrameElement"/>
+                <allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
                 <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasWallElement"/>
                 <allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WallElement"/>
             </Restriction>
@@ -981,6 +1060,16 @@ Student ID: 942020</rdfs:comment>
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement -->
+
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
+        <disjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement"/>
+    </Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent -->
 
 
@@ -1007,6 +1096,13 @@ Student ID: 942020</rdfs:comment>
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement -->
+
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect -->
 
 
@@ -1017,7 +1113,9 @@ Student ID: 942020</rdfs:comment>
     <!-- http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement -->
 
 
-    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement"/>
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
+    </Class>
     
 
 
@@ -1073,6 +1171,12 @@ Student ID: 942020</rdfs:comment>
             <Restriction>
                 <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasRequirement"/>
                 <someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AcousticFeature"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasRequirement"/>
+                <someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1659,7 +1763,9 @@ Student ID: 942020</rdfs:comment>
     <!-- http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement -->
 
 
-    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement"/>
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FloorElement"/>
+    </Class>
     
 
 
@@ -1733,6 +1839,7 @@ Student ID: 942020</rdfs:comment>
 
 
     <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WallElement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GymnasiumBuildingElement"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEffect"/>
@@ -2235,6 +2342,16 @@ Student ID: 942020</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#CeilingElement"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloorElement"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#FoundationElement"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#FrameElement"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#WallElement"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#CeramicFloor"/>
             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor"/>
             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#HardPlasticFloor"/>
@@ -2262,6 +2379,17 @@ Student ID: 942020</rdfs:comment>
             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent"/>
             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent"/>
             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Gymnasium"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumElement"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse"/>
         </members>
     </rdf:Description>
     <rdf:Description>
