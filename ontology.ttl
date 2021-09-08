@@ -1,0 +1,1486 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology ;
+   rdfs:comment "An ontology that describes a high school gymnasium in terms of its components, features, systems, possible uses and environmental aspects."@en ,
+                """Student Name: Eyosias Dawit Guyo
+Student ID: 942020"""@en ;
+   rdfs:label "High school gymnasium" ;
+   owl:versionInfo "1.0.0"
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement
+<http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> rdf:type owl:ObjectProperty ;
+                                                              owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> ;
+                                                              rdf:type owl:TransitiveProperty ;
+                                                              rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement
+<http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement> rdf:type owl:ObjectProperty ;
+                                                             rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> ;
+                                                             owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isCeilingElementOf> ;
+                                                             rdf:type owl:FunctionalProperty ;
+                                                             rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> ;
+                                                             rdfs:range <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasComponent
+<http://www.co-ode.org/ontologies/ont.owl#hasComponent> rdf:type owl:ObjectProperty ;
+                                                        owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isComponentOf> ;
+                                                        rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> ;
+                                                        rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasEffect
+<http://www.co-ode.org/ontologies/ont.owl#hasEffect> rdf:type owl:ObjectProperty ;
+                                                     owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isEffectOf> ;
+                                                     rdfs:domain [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://www.co-ode.org/ontologies/ont.owl#CeilingElement>
+                                                                                 <http://www.co-ode.org/ontologies/ont.owl#WallElement>
+                                                                               )
+                                                                 ] ;
+                                                     rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect
+<http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> rdf:type owl:ObjectProperty ;
+                                                                  owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isEnvironmentalAspectOf> ;
+                                                                  rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> ;
+                                                                  rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasEquipmentElement
+<http://www.co-ode.org/ontologies/ont.owl#hasEquipmentElement> rdf:type owl:ObjectProperty ;
+                                                               owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isEquipmentElementOf> ;
+                                                               rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> ;
+                                                               rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasFeature
+<http://www.co-ode.org/ontologies/ont.owl#hasFeature> rdf:type owl:ObjectProperty ;
+                                                      owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isFeatureOf> ;
+                                                      rdfs:domain [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <http://www.co-ode.org/ontologies/ont.owl#Gymnasium>
+                                                                                  <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent>
+                                                                                )
+                                                                  ] ;
+                                                      rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasFloorElement
+<http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> rdf:type owl:ObjectProperty ;
+                                                           rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> ;
+                                                           owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> ;
+                                                           rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement
+<http://www.co-ode.org/ontologies/ont.owl#hasFoundationElement> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> ;
+                                                                owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> ;
+                                                                rdf:type owl:FunctionalProperty ;
+                                                                rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasFrameElement
+<http://www.co-ode.org/ontologies/ont.owl#hasFrameElement> rdf:type owl:ObjectProperty ;
+                                                           rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> ;
+                                                           owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> ;
+                                                           rdf:type owl:FunctionalProperty ;
+                                                           rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasRequirement
+<http://www.co-ode.org/ontologies/ont.owl#hasRequirement> rdf:type owl:ObjectProperty ;
+                                                          owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isRequirementOf> ;
+                                                          rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasUse
+<http://www.co-ode.org/ontologies/ont.owl#hasUse> rdf:type owl:ObjectProperty ;
+                                                  owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isUseOf> ;
+                                                  rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> ;
+                                                  rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasWallElement
+<http://www.co-ode.org/ontologies/ont.owl#hasWallElement> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasBuildingElement> ;
+                                                          owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#isWallElementOf> ;
+                                                          rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> ;
+                                                          rdfs:range <http://www.co-ode.org/ontologies/ont.owl#WallElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> rdf:type owl:ObjectProperty ,
+                                                                        owl:TransitiveProperty ;
+                                                               rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isCeilingElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isCeilingElementOf> rdf:type owl:ObjectProperty ;
+                                                              rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> ;
+                                                              rdf:type owl:InverseFunctionalProperty ;
+                                                              rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> ;
+                                                              rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isComponentOf
+<http://www.co-ode.org/ontologies/ont.owl#isComponentOf> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> ;
+                                                         rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isEffectOf
+<http://www.co-ode.org/ontologies/ont.owl#isEffectOf> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> ;
+                                                      rdfs:range [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://www.co-ode.org/ontologies/ont.owl#CeilingElement>
+                                                                                 <http://www.co-ode.org/ontologies/ont.owl#WallElement>
+                                                                               )
+                                                                 ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isEnvironmentalAspectOf
+<http://www.co-ode.org/ontologies/ont.owl#isEnvironmentalAspectOf> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> ;
+                                                                   rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isEquipmentElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isEquipmentElementOf> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> ;
+                                                                rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isFeatureOf
+<http://www.co-ode.org/ontologies/ont.owl#isFeatureOf> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> ;
+                                                       rdfs:range [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <http://www.co-ode.org/ontologies/ont.owl#Gymnasium>
+                                                                                  <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent>
+                                                                                )
+                                                                  ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isFloorElementOf> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> ;
+                                                            rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isFoundationElementOf> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> ;
+                                                                 rdf:type owl:InverseFunctionalProperty ;
+                                                                 rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isFrameElementOf> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> ;
+                                                            rdf:type owl:InverseFunctionalProperty ;
+                                                            rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isRequirementOf
+<http://www.co-ode.org/ontologies/ont.owl#isRequirementOf> rdf:type owl:ObjectProperty ;
+                                                           rdfs:range <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isUseOf
+<http://www.co-ode.org/ontologies/ont.owl#isUseOf> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> ;
+                                                   rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isWallElementOf
+<http://www.co-ode.org/ontologies/ont.owl#isWallElementOf> rdf:type owl:ObjectProperty ;
+                                                           rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#isBuildingElementOf> ;
+                                                           rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#WallElement> ;
+                                                           rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasArea
+<http://www.co-ode.org/ontologies/ont.owl#hasArea> rdf:type owl:DatatypeProperty ,
+                                                            owl:FunctionalProperty ;
+                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( <http://www.co-ode.org/ontologies/ont.owl#Gymnasium>
+                                                                               <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent>
+                                                                             )
+                                                               ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue
+<http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> rdf:type owl:DatatypeProperty ,
+                                                                          owl:FunctionalProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasClearanceValue
+<http://www.co-ode.org/ontologies/ont.owl#hasClearanceValue> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue
+<http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasClearanceValue> ;
+                                                                rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasFoulLine
+<http://www.co-ode.org/ontologies/ont.owl#hasFoulLine> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasKeyWidth
+<http://www.co-ode.org/ontologies/ont.owl#hasKeyWidth> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasLength
+<http://www.co-ode.org/ontologies/ont.owl#hasLength> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasLockerSize
+<http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasLockerType
+<http://www.co-ode.org/ontologies/ont.owl#hasLockerType> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen
+<http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen
+<http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNumberOfHandwashBasin
+<http://www.co-ode.org/ontologies/ont.owl#hasNumberOfHandwashBasin> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNumberOfLocker
+<http://www.co-ode.org/ontologies/ont.owl#hasNumberOfLocker> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNumberOfSeat
+<http://www.co-ode.org/ontologies/ont.owl#hasNumberOfSeat> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNumberOfUrinals
+<http://www.co-ode.org/ontologies/ont.owl#hasNumberOfUrinals> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNumberOfWaterCloset
+<http://www.co-ode.org/ontologies/ont.owl#hasNumberOfWaterCloset> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasSeatingType
+<http://www.co-ode.org/ontologies/ont.owl#hasSeatingType> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue
+<http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:subPropertyOf <http://www.co-ode.org/ontologies/ont.owl#hasClearanceValue> ;
+                                                                 rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasToiletType
+<http://www.co-ode.org/ontologies/ont.owl#hasToiletType> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasUrinal
+<http://www.co-ode.org/ontologies/ont.owl#hasUrinal> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasWidth
+<http://www.co-ode.org/ontologies/ont.owl#hasWidth> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc
+<http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#AccessRoad
+<http://www.co-ode.org/ontologies/ont.owl#AccessRoad> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect>
+                                                                                                 [ rdf:type owl:Class ;
+                                                                                                   owl:oneOf ( <http://www.co-ode.org/ontologies/ont.owl#DirectAccess>
+                                                                                                               <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess>
+                                                                                                               <http://www.co-ode.org/ontologies/ont.owl#IndirectAccess>
+                                                                                                             )
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature
+<http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> ;
+                                                                rdfs:comment "All components of the gymnasium should be easily accessible"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#AcousticFeature
+<http://www.co-ode.org/ontologies/ont.owl#AcousticFeature> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> ;
+                                                           rdfs:comment "The right acoustic configuration need to be worked out during the design phase"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse
+<http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                      owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement>
+                                                                                    ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ArtificialLightFeature
+<http://www.co-ode.org/ontologies/ont.owl#ArtificialLightFeature> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LightFeature> ;
+                                                                  owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#NaturalLightFeature> ;
+                                                                  rdfs:comment "Artificial light sources need to be placed around the gym for adequate lighting and for night time use."@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment
+<http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#BeamElement
+<http://www.co-ode.org/ontologies/ont.owl#BeamElement> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#BenchComponent
+<http://www.co-ode.org/ontologies/ont.owl#BenchComponent> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#BraceElement
+<http://www.co-ode.org/ontologies/ont.owl#BraceElement> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment
+<http://www.co-ode.org/ontologies/ont.owl#CeilingAttachment> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature>
+                                                                             ] ;
+                                                             owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#StructuralCeilingElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CeilingElement
+<http://www.co-ode.org/ontologies/ont.owl#CeilingElement> rdf:type owl:Class ;
+                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#LightFeature>
+                                                                          ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CeramicFloor
+<http://www.co-ode.org/ontologies/ont.owl#CeramicFloor> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature
+<http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ColumnElement
+<http://www.co-ode.org/ontologies/ont.owl#ColumnElement> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CommunityUse
+<http://www.co-ode.org/ontologies/ont.owl#CommunityUse> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent>
+                                                                        ] ;
+                                                        owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ;
+                                                        rdfs:comment "A high school gym could provide service to the community during certain events."@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent
+<http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                                     ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor
+<http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool
+<http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CoreWallElement
+<http://www.co-ode.org/ontologies/ont.owl#CoreWallElement> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#WallElement> ;
+                                                           owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#WallAttachment> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent
+<http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CourtEndClearanceComponent
+<http://www.co-ode.org/ontologies/ont.owl#CourtEndClearanceComponent> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> ;
+                                                                      owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#CourtSideClearanceComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#CourtSideClearanceComponent
+<http://www.co-ode.org/ontologies/ont.owl#CourtSideClearanceComponent> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#DesignedGymnasium
+<http://www.co-ode.org/ontologies/ont.owl#DesignedGymnasium> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#Gymnasium> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#EmergencyCommunityUse
+<http://www.co-ode.org/ontologies/ont.owl#EmergencyCommunityUse> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> ;
+                                                                 owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> ;
+                                                                 rdfs:comment "A high school gymnasium can have use for the community during emergency situations. For instance providing shelter in the event of disaster."@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement
+<http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> rdf:type owl:Class ;
+                                                              owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Gymnasium
+<http://www.co-ode.org/ontologies/ont.owl#Gymnasium> rdf:type owl:Class ;
+                                                     rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                                              owl:hasValue <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt>
+                                                                                            ]
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                                              owl:hasValue <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PassageComponent>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#StepComponent>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AccessRoad>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#ParkingSpace>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#LightFeature>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasUse> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#CommunityUse>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasUse> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasUse> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasUse> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasUse> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasUse> ;
+                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasCeilingElement> ;
+                                                                       owl:allValuesFrom <http://www.co-ode.org/ontologies/ont.owl#CeilingElement>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasWallElement> ;
+                                                                       owl:allValuesFrom <http://www.co-ode.org/ontologies/ont.owl#WallElement>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasWallElement> ;
+                                                                       owl:hasValue <http://www.co-ode.org/ontologies/ont.owl#WallPadding>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass <http://www.co-ode.org/ontologies/ont.owl#LockerComponent>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasComponent> ;
+                                                                       owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent>
+                                                                     ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> rdf:type owl:Class ;
+                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature>
+                                                                              ] ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#LightFeature>
+                                                                              ] ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature>
+                                                                              ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#DesignedGymnasium> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> ;
+                                                                              owl:hasValue <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess>
+                                                                            ] ;
+                                                            owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#DesignedGymnasium> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEnvironmentalAspect> ;
+                                                                              owl:hasValue <http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess>
+                                                                            ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> rdf:type owl:Class ;
+                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#LightFeature>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                          owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent>
+                                                                        ] ;
+                                                        rdfs:comment "Events that are going to be hosted in the gymnasium" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HandRailComponent
+<http://www.co-ode.org/ontologies/ont.owl#HandRailComponent> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PassageComponent> ;
+                                                             owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#StepComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HardPlasticFloor
+<http://www.co-ode.org/ontologies/ont.owl#HardPlasticFloor> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse
+<http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#LightFeature
+<http://www.co-ode.org/ontologies/ont.owl#LightFeature> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> ;
+                                                        rdfs:comment "Almost all activities to be carried out in the gymnasium require adequate lighting."@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#LockerComponent
+<http://www.co-ode.org/ontologies/ont.owl#LockerComponent> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent
+<http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent
+<http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> rdf:type owl:Class ;
+                                                              owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent>
+                                                                                                         [ rdf:type owl:Class ;
+                                                                                                           owl:oneOf ( <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt>
+                                                                                                                       <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt>
+                                                                                                                     )
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ] ;
+                                                              rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                              ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MainHallComponent
+<http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> ,
+                                                                             [ rdf:type owl:Class ;
+                                                                               owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFloorElement> ;
+                                                                                                  owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#RubberFloor>
+                                                                                                ]
+                                                                             ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MarbleFloor
+<http://www.co-ode.org/ontologies/ont.owl#MarbleFloor> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#NaturalLightFeature
+<http://www.co-ode.org/ontologies/ont.owl#NaturalLightFeature> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LightFeature> ;
+                                                               rdfs:comment "Windows carefully placed around the gym walls and may be skylight on the roof can provide natural light to the gym and conserve energy"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse
+<http://www.co-ode.org/ontologies/ont.owl#NonEmergencyCommunityUse> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#CommunityUse> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                      owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment>
+                                                                                    ] ;
+                                                                    rdfs:comment "A high school gymnasium can have use for the community that are not related to emergency. For instance voting venue during elections."@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#OfficeComponent
+<http://www.co-ode.org/ontologies/ont.owl#OfficeComponent> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ParkingSpace
+<http://www.co-ode.org/ontologies/ont.owl#ParkingSpace> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEnvironmentalAspect> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PassageComponent
+<http://www.co-ode.org/ontologies/ont.owl#PassageComponent> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> ;
+                                                            owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent>
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment>
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SportEquipment>
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent>
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent>
+                                                                                     ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment
+<http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PorcelainMosaicFloor
+<http://www.co-ode.org/ontologies/ont.owl#PorcelainMosaicFloor> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PreAndPostGameMeetingsAreaComponent
+<http://www.co-ode.org/ontologies/ont.owl#PreAndPostGameMeetingsAreaComponent> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent
+<http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent
+<http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                  owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                                ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor
+<http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#RestroomComponent
+<http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#RubberFloor
+<http://www.co-ode.org/ontologies/ont.owl#RubberFloor> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SafetyFeature
+<http://www.co-ode.org/ontologies/ont.owl#SafetyFeature> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumFeature> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse
+<http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                 owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment>
+                                                                               ] ;
+                                                               rdfs:comment "Venue for school ceremonies such as commencement ceremonies"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse
+<http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent>
+                                                                          ] ;
+                                                          rdfs:comment "High school dancing event such as prom, homecoming and others."@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse
+<http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                              owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                              owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                              owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent>
+                                                                            ] ;
+                                                            rdfs:comment "e.g. student meetings, teacher-parent meetings"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                 owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                 owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                 owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SportEquipment>
+                                                                               ] ;
+                                                               owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> ;
+                                                               rdfs:comment "e.g. Volleyball, basketball"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportTrainingUse> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                    owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment>
+                                                                                  ] ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                                    owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SportEquipment>
+                                                                                  ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse
+<http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#HighSchoolUse> ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SportEquipment>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasRequirement> ;
+                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent>
+                                                                             ] ;
+                                                             rdfs:comment "Venue for Sporting events"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent
+<http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent
+<http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasFeature> ;
+                                                                                  owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                                ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SeatingComponent
+<http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> rdf:type owl:Class ;
+                                                            owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent>
+                                                                                                       [ rdf:type owl:Class ;
+                                                                                                         owl:oneOf ( <http://www.co-ode.org/ontologies/ont.owl#FixedSeating>
+                                                                                                                     <http://www.co-ode.org/ontologies/ont.owl#PortableSeating>
+                                                                                                                     <http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating>
+                                                                                                                   )
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ] ;
+                                                            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ShowerComponent
+<http://www.co-ode.org/ontologies/ont.owl#ShowerComponent> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#SportEquipment
+<http://www.co-ode.org/ontologies/ont.owl#SportEquipment> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumEquipmentElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#StepComponent
+<http://www.co-ode.org/ontologies/ont.owl#StepComponent> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PassageComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent
+<http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#StructuralCeilingElement
+<http://www.co-ode.org/ontologies/ont.owl#StructuralCeilingElement> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#CeilingElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement
+<http://www.co-ode.org/ontologies/ont.owl#StructuralFloorElement> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent
+<http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TicketingComponent
+<http://www.co-ode.org/ontologies/ont.owl#TicketingComponent> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ToiletComponent
+<http://www.co-ode.org/ontologies/ont.owl#ToiletComponent> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent
+<http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GymnasiumComponent> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#VinylFloor
+<http://www.co-ode.org/ontologies/ont.owl#VinylFloor> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#WallAttachment
+<http://www.co-ode.org/ontologies/ont.owl#WallAttachment> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#WallElement> ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature>
+                                                                          ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#WallElement
+<http://www.co-ode.org/ontologies/ont.owl#WallElement> rdf:type owl:Class ;
+                                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                         owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://www.co-ode.org/ontologies/ont.owl#hasEffect> ;
+                                                                         owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#LightFeature>
+                                                                       ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#WoodFloor
+<http://www.co-ode.org/ontologies/ont.owl#WoodFloor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#FloorFinishElement> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#BasketballCourt
+<http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasFoulLine> "0.4 from the foul line to the front of the backboard and 5.7 from the baseline" ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasKeyWidth> "3.6"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasLength> "26.0"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasWidth> "15.0"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc> "6.01"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasFoulLine> ;
+   owl:annotatedTarget "0.4 from the foul line to the front of the backboard and 5.7 from the baseline" ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasKeyWidth> ;
+   owl:annotatedTarget "3.6"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasLength> ;
+   owl:annotatedTarget "26.0"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasWidth> ;
+   owl:annotatedTarget "15.0"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#BasketballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#has3PointLine/Arc> ;
+   owl:annotatedTarget "6.01"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#BasketballMatch
+<http://www.co-ode.org/ontologies/ont.owl#BasketballMatch> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#DirectAccess
+<http://www.co-ode.org/ontologies/ont.owl#DirectAccess> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#FixedSeating
+<http://www.co-ode.org/ontologies/ont.owl#FixedSeating> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> ;
+                                                        <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfSeat> "200.0"^^xsd:double ;
+                                                        <http://www.co-ode.org/ontologies/ont.owl#hasSeatingType> "Bleacher"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> ;
+                                                            <http://www.co-ode.org/ontologies/ont.owl#hasComponent> <http://www.co-ode.org/ontologies/ont.owl#FixedSeating> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption1> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption1> ;
+                                                            <http://www.co-ode.org/ontologies/ont.owl#hasArea> "700.0"^^xsd:double ;
+                                                            <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> "7.32"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption1> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> ;
+   owl:annotatedTarget "7.32"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2
+<http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> ;
+                                                            <http://www.co-ode.org/ontologies/ont.owl#hasComponent> <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption2> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> ,
+                                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption2> ;
+                                                            <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> "7.32"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#GymnasiumOption2> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasCeilingHeightValue> ;
+   owl:annotatedTarget "7.32"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess
+<http://www.co-ode.org/ontologies/ont.owl#HandicappedAccess> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HighSchoolProm
+<http://www.co-ode.org/ontologies/ont.owl#HighSchoolProm> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HomecomingDance
+<http://www.co-ode.org/ontologies/ont.owl#HomecomingDance> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#IndirectAccess
+<http://www.co-ode.org/ontologies/ont.owl#IndirectAccess> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.co-ode.org/ontologies/ont.owl#AccessRoad> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#LockerOption1
+<http://www.co-ode.org/ontologies/ont.owl#LockerOption1> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.co-ode.org/ontologies/ont.owl#LockerComponent> ;
+                                                         <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> "30x30" ;
+                                                         <http://www.co-ode.org/ontologies/ont.owl#hasLockerType> "30 Double tier" ;
+                                                         <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfLocker> 60 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#LockerOption1> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> ;
+   owl:annotatedTarget "30x30" ;
+   rdfs:comment "Unit is in Centimeter"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#LockerOption2
+<http://www.co-ode.org/ontologies/ont.owl#LockerOption2> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.co-ode.org/ontologies/ont.owl#LockerComponent> ;
+                                                         <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> "(3)30x30" ;
+                                                         <http://www.co-ode.org/ontologies/ont.owl#hasLockerType> "(60) 5‐tier/5‐tier/full" ;
+                                                         <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfLocker> 300 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#LockerOption2> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasLockerSize> ;
+   owl:annotatedTarget "(3)30x30" ;
+   rdfs:comment "Unit is in Centimeter"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption1
+<http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption1> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfHandwashBasin> 2 ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfUrinals> 2 ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfWaterCloset> 2 ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasToiletType> "Flushing Toilet"@en ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasUrinal> "true"^^xsd:boolean .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption2
+<http://www.co-ode.org/ontologies/ont.owl#MensRestroomOption2> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfHandwashBasin> 5 ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfUrinals> 6 ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfWaterCloset> 6 ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasToiletType> "Flushing Toilet"@en ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasUrinal> "true"^^xsd:boolean .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance
+<http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance> rdf:type owl:NamedIndividual ;
+                                                               <http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue> "3.1"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#MinimumEndClearance> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasEndClearanceValue> ;
+   owl:annotatedTarget "3.1"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance
+<http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance> rdf:type owl:NamedIndividual ;
+                                                                <http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue> "1.8"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#MinimumSideClearance> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasSideClearanceValue> ;
+   owl:annotatedTarget "1.8"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PortableSeating
+<http://www.co-ode.org/ontologies/ont.owl#PortableSeating> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfSeat> "200.0"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasSeatingType> "Bleacher"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1
+<http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> ;
+                                                              <http://www.co-ode.org/ontologies/ont.owl#hasArea> "40.0"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption1> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasArea> ;
+   owl:annotatedTarget "40.0"^^xsd:double ;
+   rdfs:comment "Unit is in square Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2
+<http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent> ;
+                                                              <http://www.co-ode.org/ontologies/ont.owl#hasArea> "80.0"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#StorageRoomOption2> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasArea> ;
+   owl:annotatedTarget "80.0"^^xsd:double ;
+   rdfs:comment "Unit is in square Meters"
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating
+<http://www.co-ode.org/ontologies/ont.owl#TelescopicSeating> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.co-ode.org/ontologies/ont.owl#SeatingComponent> ;
+                                                             <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfSeat> "1100.0"^^xsd:double ;
+                                                             <http://www.co-ode.org/ontologies/ont.owl#hasSeatingType> "Bleacher"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TrainingFacility
+<http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent> ;
+                                                            <http://www.co-ode.org/ontologies/ont.owl#hasArea> "230.0"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#TrainingFacility> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasArea> ;
+   owl:annotatedTarget "230.0"^^xsd:double ;
+   rdfs:comment "Unit is in square Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt
+<http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent> ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasLength> "18.0"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen> "2.43"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen> "2.24"^^xsd:double ;
+                                                           <http://www.co-ode.org/ontologies/ont.owl#hasWidth> "9.0"^^xsd:double .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasLength> ;
+   owl:annotatedTarget "18.0"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForMen> ;
+   owl:annotatedTarget "2.43"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasNetHeightForWomen> ;
+   owl:annotatedTarget "2.24"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.co-ode.org/ontologies/ont.owl#VolleyballCourt> ;
+   owl:annotatedProperty <http://www.co-ode.org/ontologies/ont.owl#hasWidth> ;
+   owl:annotatedTarget "9.0"^^xsd:double ;
+   rdfs:comment "Unit is in Meters"@en
+ ] .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#VolleyballMatch
+<http://www.co-ode.org/ontologies/ont.owl#VolleyballMatch> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#SchoolSportMatchUse> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#WallPadding
+<http://www.co-ode.org/ontologies/ont.owl#WallPadding> rdf:type owl:NamedIndividual ,
+                                                                <http://www.co-ode.org/ontologies/ont.owl#WallAttachment> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption1
+<http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption1> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfHandwashBasin> 2 ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfWaterCloset> 4 ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasToiletType> "Flushing Toilet"@en ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasUrinal> "false"^^xsd:boolean .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption2
+<http://www.co-ode.org/ontologies/ont.owl#WomensRestroomOption2> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent> ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfHandwashBasin> 5 ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasNumberOfWaterCloset> 12 ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasToiletType> "Flushing Toilet"@en ;
+                                                                 <http://www.co-ode.org/ontologies/ont.owl#hasUrinal> "false"^^xsd:boolean .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#AccessRoad>
+                <http://www.co-ode.org/ontologies/ont.owl#ConnectionToSchool>
+                <http://www.co-ode.org/ontologies/ont.owl#ParkingSpace>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#AccessibilityFeature>
+                <http://www.co-ode.org/ontologies/ont.owl#AcousticFeature>
+                <http://www.co-ode.org/ontologies/ont.owl#ColorAndDecorFeature>
+                <http://www.co-ode.org/ontologies/ont.owl#LightFeature>
+                <http://www.co-ode.org/ontologies/ont.owl#SafetyFeature>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#AfterSchoolActivitiesUse>
+                <http://www.co-ode.org/ontologies/ont.owl#PhysicalEducationClassUse>
+                <http://www.co-ode.org/ontologies/ont.owl#SchoolCeremoniesUse>
+                <http://www.co-ode.org/ontologies/ont.owl#SchoolDanceUse>
+                <http://www.co-ode.org/ontologies/ont.owl#SchoolMeetingUse>
+                <http://www.co-ode.org/ontologies/ont.owl#SchoolSportingUse>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#AudioVisualEquipment>
+                <http://www.co-ode.org/ontologies/ont.owl#PhysicalFitnessEquipment>
+                <http://www.co-ode.org/ontologies/ont.owl#SportEquipment>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#BeamElement>
+                <http://www.co-ode.org/ontologies/ont.owl#BraceElement>
+                <http://www.co-ode.org/ontologies/ont.owl#ColumnElement>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#BenchComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#LockerComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#PreAndPostGameMeetingsAreaComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#ShowerComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#ToiletComponent>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#CeramicFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#ConcreteFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#HardPlasticFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#MarbleFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#PorcelainMosaicFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#QuartzEpoxyFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#RubberFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#VinylFloor>
+                <http://www.co-ode.org/ontologies/ont.owl#WoodFloor>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#ConcessionStandsComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#PublicLobbyComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#RestroomComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#TicketingComponent>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#CourtClearanceComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#MainCourtComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#ScorersTableComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#TeamSeatingComponent>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.co-ode.org/ontologies/ont.owl#LockerRoomComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#MainHallComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#OfficeComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#PublicFacilitiesComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#SeatingAreaComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#StorageRoomComponent>
+                <http://www.co-ode.org/ontologies/ont.owl#TrainingFacilitiesComponent>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
